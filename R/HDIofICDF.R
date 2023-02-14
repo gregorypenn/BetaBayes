@@ -5,6 +5,7 @@
 #' @param ICDFname R's name for the inverse cumulative density function of the distribution.
 #' @param credMass The desired mass of the HDI region.
 #' @param tol Passed to R's optimize function.
+#' @param ... Additional arguments passed to ICDF.
 #' @return Highest density interval (HDI) limits in a vector.
 #' @export
 HDIofICDF <- function (ICDFname, credMass = 0.95, tol = 1e-8, ...) {

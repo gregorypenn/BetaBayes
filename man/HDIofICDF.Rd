@@ -12,6 +12,8 @@ HDIofICDF(ICDFname, credMass = 0.95, tol = 1e-08, ...)
 \item{credMass}{The desired mass of the HDI region.}
 
 \item{tol}{Passed to R's optimize function.}
+
+\item{...}{Additional arguments passed to ICDF.}
 }
 \value{
 Highest density interval (HDI) limits in a vector.
