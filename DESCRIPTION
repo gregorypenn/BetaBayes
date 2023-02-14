@@ -11,3 +11,7 @@ RoxygenNote: 7.2.3
 Imports: 
     ggplot2
 URL: https://gregorypenn.github.io/BetaBayes/
+Suggests: 
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr

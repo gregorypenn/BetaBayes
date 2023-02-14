@@ -1,0 +1,49 @@
+---
+title: "plotdbeta"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{plotdbeta}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(BetaBayes)
+```
+
+The purpose of the `plotdbeta` function is to visualize the probability density of a beta distribution. By default, the function also includes a line indicating the distribution's expected value and shades a 95% highest density or credible interval.
+
+```{r}
+plotdbeta(6, 2)
+```
+The function returns a ggplot2 object, which can be added to in any of the standard ways, like adding a title.
+
+```{r}
+plotdbeta(6, 2) + ggtitle("Beta Probability Density")
+```
+
+Oops! Loading BetaBayes does not automatically load ggplot2, which we need to do in order to use ggplot2 functions without explicitly scoping them (like calling ggplot2::ggtitle("My Title")).
+
+```{r}
+library(ggplot2)
+plotdbeta(6, 2) + ggtitle("Beta Probability Density")
+```
+
+Some beta distributions have most of their mass bunched up in one area, like this.
+
+```{r}
+plotdbeta(1, 300)
+```
+
+Obviously, most of the probability mass is near zero, but how it's distributed in that area might be what we really want to know. We can zoom the plot in on that area using the `xlim` argument.
+
+```{r}
+plotdbeta(1, 300, xlim = c(0, 0.02))
+```
