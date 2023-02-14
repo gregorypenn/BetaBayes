@@ -18,7 +18,7 @@ knitr::opts_chunk$set(
 library(BetaBayes)
 ```
 
-The purpose of the `plotdbeta` function is to visualize the probability density of a beta distribution. By default, the function also includes a line indicating the distribution's expected value and shades a 95% highest density or credible interval.
+The purpose of the `plotdbeta` function is to visualize the probability density of a beta distribution. By default, the function also includes a line indicating the distribution's expected value and shades a 95% highest density or credible interval. We'll start with a default plot and then explore modifications.
 
 ```{r}
 plotdbeta(6, 2)
