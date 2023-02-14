@@ -23,18 +23,13 @@ The purpose of the `plotdbeta` function is to visualize the probability density 
 ```{r}
 plotdbeta(6, 2)
 ```
-The function returns a ggplot2 object, which can be added to in any of the standard ways, like adding a title.
-
-```{r}
-plotdbeta(6, 2) + ggtitle("Beta Probability Density")
-```
-
-Oops! Loading BetaBayes does not automatically load ggplot2, which we need to do in order to use ggplot2 functions without explicitly scoping them (like calling ggplot2::ggtitle("My Title")).
+The function returns a ggplot2 object, which can be added to in any of the standard ways, like adding a title. Note that loading BetaBayes does not automatically load ggplot2, which we need to do in order to use ggplot2 functions without explicitly scoping them (like calling ggplot2::ggtitle("My Title")).
 
 ```{r}
 library(ggplot2)
 plotdbeta(6, 2) + ggtitle("Beta Probability Density")
 ```
+
 
 Some beta distributions have most of their mass bunched up in one area, like this.
 
@@ -42,8 +37,8 @@ Some beta distributions have most of their mass bunched up in one area, like thi
 plotdbeta(1, 300)
 ```
 
-Obviously, most of the probability mass is near zero, but how it's distributed in that area might be what we really want to know. We can zoom the plot in on that area using the `xlim` argument.
+Obviously, most of the probability mass is near zero, but how it's distributed in that area might be what we really want to know. We can zoom the plot in on that area using the xlim argument to plotdbeta, but for some reason this vignette isn't building properly when I do that, so here's how to do it directly with ggplot.
 
 ```{r}
-plotdbeta(1, 300, xlim = c(0, 0.02))
+plotdbeta(1, 300) + coord_cartesian(xlim = c(0, 0.02))
 ```
