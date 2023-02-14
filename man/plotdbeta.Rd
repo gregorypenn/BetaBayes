@@ -4,7 +4,7 @@
 \alias{plotdbeta}
 \title{Plot a beta density distribution}
 \usage{
-plotdbeta(shape1, shape2, expectation = TRUE, HDImass = 0.95)
+plotdbeta(shape1, shape2, expectation = TRUE, HDImass = 0.95, xlim = c(0, 1))
 }
 \arguments{
 \item{shape1}{Shape parameter passed to dbeta.}
@@ -14,6 +14,8 @@ plotdbeta(shape1, shape2, expectation = TRUE, HDImass = 0.95)
 \item{expectation}{Include line for expected value.}
 
 \item{HDImass}{Mass of credible interval to shade. NULL to omit.}
+
+\item{xlim}{Limit range of x-axis.}
 }
 \description{
 Plot a beta density distribution

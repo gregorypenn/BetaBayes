@@ -7,7 +7,7 @@
 HDIofICDF(ICDFname, credMass = 0.95, tol = 1e-08, ...)
 }
 \arguments{
-\item{ICDFname}{R's name for the inverse cumulative density function of the distribution.}
+\item{ICDFname}{R's name for the inverse cumulative density function of the distribution. Generally a q function like qbeta.}
 
 \item{credMass}{The desired mass of the HDI region.}
 
@@ -16,7 +16,7 @@ HDIofICDF(ICDFname, credMass = 0.95, tol = 1e-08, ...)
 \item{...}{Additional arguments passed to ICDF.}
 }
 \value{
-Highest density interval (HDI) limits in a vector.
+Highest density interval (HDI) bounds in a vector of length 2.
 }
 \description{
 Highest Density Interval (HDI) of Inverse Cumulative Density Function (ICDF)

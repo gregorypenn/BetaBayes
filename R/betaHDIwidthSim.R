@@ -9,6 +9,7 @@
 #' @param HDImass The desired mass of the highest density interval (HDI).
 #' @param minSamples Number of samples to begin simulation.
 #' @param maxSamples Number of samples to end simulation.
+#' @return A dataframe with columns n and HDIwidth.
 #' @export
 betaHDIwidthSim <- function(genPriorMean, genPriorN,
                             audPriorMean = 0.5, audPriorN = 2,

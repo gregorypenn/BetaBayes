@@ -29,6 +29,9 @@ betaHDIwidthSim(
 
 \item{maxSamples}{Number of samples to end simulation.}
 }
+\value{
+A dataframe with columns n and HDIwidth.
+}
 \description{
 Simulate the highest density interval (HDI) width for a beta posterior.
 }

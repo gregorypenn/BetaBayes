@@ -2,11 +2,11 @@
 
 #' Highest Density Interval (HDI) of Inverse Cumulative Density Function (ICDF)
 #'
-#' @param ICDFname R's name for the inverse cumulative density function of the distribution.
+#' @param ICDFname R's name for the inverse cumulative density function of the distribution. Generally a q function like qbeta.
 #' @param credMass The desired mass of the HDI region.
 #' @param tol Passed to R's optimize function.
 #' @param ... Additional arguments passed to ICDF.
-#' @return Highest density interval (HDI) limits in a vector.
+#' @return Highest density interval (HDI) bounds in a vector of length 2.
 #' @export
 HDIofICDF <- function (ICDFname, credMass = 0.95, tol = 1e-8, ...) {
   incredMass <- 1.0 - credMass
