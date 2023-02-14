@@ -7,7 +7,8 @@
 #' @param audPriorMean The mean of the prior for analysis.
 #' @param audPriorN The sum of the prior's shape parameters or sample size on which the prior is based.
 #' @param HDImass The desired mass of the highest density interval (HDI).
-#' @param initSampSize Number of samples to begin simulation.
+#' @param minSamples Number of samples to begin simulation.
+#' @param maxSamples Number of samples to end simulation.
 betaHDIwidthSim <- function(genPriorMean, genPriorN,
                             audPriorMean = 0.5, audPriorN = 2,
                             HDImass = 0.95,
@@ -40,7 +41,7 @@ betaHDIwidthSim <- function(genPriorMean, genPriorN,
     hdiMat <- matrix(0, nrow = length(zvec), ncol = 2)
     for (zIdx in 1:length(zvec)) {
       z <- zvec[zIdx]
-      hdiMat[zIdx,] <- HDIofICDF(qbeta,
+      hdiMat[zIdx,] <- HDIofICDF(stats::qbeta,
                                  shape1 = z + audPriorA,
                                  shape2 = n - z + audPriorB)
     }

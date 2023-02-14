@@ -25,7 +25,9 @@ betaHDIwidthSim(
 
 \item{HDImass}{The desired mass of the highest density interval (HDI).}
 
-\item{initSampSize}{Number of samples to begin simulation.}
+\item{minSamples}{Number of samples to begin simulation.}
+
+\item{maxSamples}{Number of samples to end simulation.}
 }
 \description{
 Simulate the highest density interval (HDI) width for a beta posterior.

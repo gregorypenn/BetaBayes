@@ -14,6 +14,8 @@ betaDensCurve(shape1, shape2, pmin = 0, pmax = 1, n = 1000)
 \item{pmin}{Minimum value for density sampling.}
 
 \item{pmax}{Maximum value for density sampling.}
+
+\item{n}{Number of points to sample on the curve.}
 }
 \value{
 A dataframe with columns for beta variate p and its probability density.

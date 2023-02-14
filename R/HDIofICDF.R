@@ -11,7 +11,10 @@ HDIofICDF <- function (ICDFname, credMass = 0.95, tol = 1e-8, ...) {
   intervalWidth <- function (lowTailPr, ICDFname, credMass, ...) {
     ICDFname( credMass + lowTailPr, ...) - ICDFname( lowTailPr, ...)
   }
-  optInfo <- optimize(intervalWidth, c(0, incredMass), ICDFname, credMass = credMass, tol = tol, ...)
+  optInfo <- stats::optimize(intervalWidth,
+                             c(0, incredMass),
+                             ICDFname,
+                             credMass = credMass, tol = tol, ...)
   HDIlowTailPr <- optInfo$minimum
   return(c(ICDFname(HDIlowTailPr, ...),
            ICDFname(credMass + HDIlowTailPr, ...)))
