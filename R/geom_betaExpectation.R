@@ -2,6 +2,7 @@
 #' @param shape1 Shape parameter passed to dbeta.
 #' @param shape2 Shape parameter passed to dbeta.
 #' @param linetype Linetype passed to ggplot2.
+#' @export
 geom_betaExpectation <- function (shape1, shape2, linetype = "dashed") {
   expectation <- betaExpect(shape1, shape2)
   expectationDens <- stats::dbeta(expectation, shape1, shape2)
