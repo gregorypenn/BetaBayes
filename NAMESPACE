@@ -2,7 +2,10 @@
 
 export(HDIofICDF)
 export(betaDensCurve)
+export(betaExpect)
 export(betaHDIwidthSim)
+export(betaParamsFromQuantiles)
+export(betaParamsMeanAndN)
 export(geom_betaArea)
 export(geom_betaExpectation)
 export(plotdbeta)
