@@ -14,11 +14,6 @@ knitr::opts_chunk$set(
 )
 ```
 
-```{r setup}
-library(BetaBayes)
-library(ggplot2)
-```
-
 The purpose of BetaBase is to provide functions for estimating and visualizing beta distributions, commonly used for Bayesian inference of probabilities. Functions are provided to:
 
 * Determine the bounds of a credible interval containing a specified percent of the probability.
@@ -29,6 +24,11 @@ The purpose of BetaBase is to provide functions for estimating and visualizing b
 * ggplot2 geoms for interval shading and line indicating expected value.
 
 This introduction is intended to demonstrate the use of a few functions without going into detail about options. For more details see articles/vignettes for specific functions or function documentation.
+
+```{r setup}
+library(BetaBayes)
+library(ggplot2)
+```
 
 Plotting a beta distribution.
 
