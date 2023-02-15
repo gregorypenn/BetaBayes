@@ -30,7 +30,7 @@ library(BetaBayes)
 library(ggplot2)
 ```
 
-Plotting a beta distribution.
+Plotting a beta Beta(6, 4) distribution.
 
 ```{r}
 plotdbeta(6, 4, expectation = TRUE, HDImass = 0.95)
