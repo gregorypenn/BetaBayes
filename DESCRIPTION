@@ -3,7 +3,7 @@ Title: Bayesian Analysis of Probabilities with Beta Distributions
 Version: 0.0.0.9000
 Authors@R: 
     person("Gregory", "Penn", , "contact@crediblecorvid.com", role = c("aut", "cre"))
-Description: Functions for estimating and visualizing beta distributions and their quantiles.
+Description: Functions for estimating and visualizing beta distributions.
 License: GPL (>= 3)
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)

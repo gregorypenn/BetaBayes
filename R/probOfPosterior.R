@@ -1,3 +1,5 @@
+# Not yet working
+
 #' Simulate the highest density interval (HDI) width for a beta posterior.
 #'
 #' @param genPriorMean The mean of the generating distribution.
@@ -5,14 +7,14 @@
 #' @param sampleSize The number of samples.
 #' @param audPriorMean The mean of the prior for analysis.
 #' @param audPriorN The sum of the prior's shape parameters or sample size on which the prior is based.
-#' @param HDImass The desired mass of the highest density interval (HDI).
+#' @param CImass The desired mass of the highest density interval (HDI).
 #' @return A dataframe with columns n and HDIwidth.
-probOfPosterior <- function(genPriorMean,
-                            genPriorN,
-                            sampleSize,
-                            audPriorMean = 0.5,
-                            audPriorN = 2,
-                            HDImass = 0.95) {
+probOfPosteriorCIwidth <- function(genPriorMean,
+                                   genPriorN,
+                                   sampleSize,
+                                   audPriorMean = 0.5,
+                                   audPriorN = 2,
+                                   CImass = 0.95) {
 
   # Convert prior mean and N to a, b parameter values of beta distribution
   genPriorA <- genPriorMean * genPriorN
