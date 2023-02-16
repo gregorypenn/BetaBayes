@@ -27,4 +27,4 @@ The easiest way to install BetaBayes is by using the devtools package.
 devtools::install_github("gregorypenn/BetaBayes")
 ```
 
-
+![xkcd: Frequentists vs. Bayeseians](https://imgs.xkcd.com/comics/frequentists_vs_bayesians.png)
