@@ -28,6 +28,9 @@
     <loc>https://gregorypenn.github.io/BetaBayes/reference/HDIofICDF.html</loc>
   </url>
   <url>
+    <loc>https://gregorypenn.github.io/BetaBayes/reference/betaCI.html</loc>
+  </url>
+  <url>
     <loc>https://gregorypenn.github.io/BetaBayes/reference/betaDensCurve.html</loc>
   </url>
   <url>
@@ -55,6 +58,6 @@
     <loc>https://gregorypenn.github.io/BetaBayes/reference/plotdbeta.html</loc>
   </url>
   <url>
-    <loc>https://gregorypenn.github.io/BetaBayes/reference/probOfPosterior.html</loc>
+    <loc>https://gregorypenn.github.io/BetaBayes/reference/probOfPosteriorCIwidth.html</loc>
   </url>
 </urlset>
