@@ -17,7 +17,7 @@ Some examples of functionality include:
 
 **Early pre-release development phase:** _caveat emptor_
 
-Updates may break backward-compatibility for a while. Suggestions and code contributions via pull requests welcome!
+Updates may break backward-compatibility for a while. Please let me know if something isn't working or is confusing. Suggestions and code contributions via pull requests welcome!
 
 ## Installation
 
@@ -27,4 +27,4 @@ The easiest way to install BetaBayes is by using the devtools package.
 devtools::install_github("gregorypenn/BetaBayes")
 ```
 
-
+![xkcd: Frequentists vs. Bayeseians](https://imgs.xkcd.com/comics/frequentists_vs_bayesians.png)
